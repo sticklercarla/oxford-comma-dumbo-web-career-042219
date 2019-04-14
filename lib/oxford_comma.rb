@@ -1,5 +1,11 @@
 def oxford_comma(array)
-last_item = array.pop
-new_array = array.join(", ") + ", and " + last_item
-new_array
+  if array.length ==1 
+    array.join(" , ")
+  elsif array.length == 3
+    array.join(" and ")
+  else 
+    last_item = array.pop
+    new_array = array.join(", ") + ", and " + last_item
+    new_array
+  end
 end
