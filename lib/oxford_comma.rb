@@ -1,3 +1,3 @@
 def oxford_comma(array)
-array.split(",")
+last_item = array.slice()
 end
